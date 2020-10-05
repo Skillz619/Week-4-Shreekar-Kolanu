@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Week 4</title>
+	
+    </head>
+    <body>
+        <style>
+            .block {
+              display: inline-block;
+              width: 10%;
+              border: none;
+              background-color: #4CAF50;
+              color: white;
+              padding: 10px 20px;
+              font-size: 16px;
+              cursor: pointer;
+              text-align: center;
+            }
+            
+            .block:hover {
+              background-color: #ddd;
+              color: black;
+            }
+
+            .block1 {
+              display: inline-block;
+              width: 10%;
+              border: none;
+              background-color: #e44343;
+              color: white;
+              padding: 10px 20px;
+              font-size: 16px;
+              cursor: pointer;
+              text-align: center;
+            }
+            
+            .block1:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            </style>
+    <button type="button" class="block" onclick="myFunction()" >Task 1</button>
+    
+    <button type="button" class="block1" onclick="Func_second()" >Task 2</button>
+    <br>
+    <hr>
+	<img id="imga" src="https://pbs.twimg.com/profile_images/1148484652358746112/UdJALHjZ.png " onmouseover="mouseOver()" onmouseout="mouseOut()"></img>
+	<script>
+	function myFunction() {
+	  	window.alert("Button Clicked");
+	}
+	</script>
+
+	<script>
+		function Func_second() {
+			let gamePrice=39.99;
+			let discount=0.20;
+			let ans = gamePrice*discount;
+			ans = Math.round(ans);
+			window.alert("£task 2 "+ans+" off!");
+		}
+	</script>
+	
+	<script>
+	function mouseOver() {
+	  document.getElementById("imga").src = "https://esportsobserver.com/wp-content/uploads/2019/05/dota-2-russia.png";
+	}
+
+	function mouseOut() {
+	document.getElementById("imga").src = "https://www.patchesoft.com/uploads/best-monitors-dota-2.jpg";
+	}
+	</script>
+    </body>
+</html>
+</html>
